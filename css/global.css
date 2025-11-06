@@ -1,9 +1,9 @@
 @font-face {
     font-family: "Montserrat";
-    src: url(../fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf),
-     url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+    src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
     font-style: normal;
     font-display: swap;
+    font-weight: 100 900;
 }
 
 
@@ -22,14 +22,17 @@ body,img,h1,p,fieldset,legend,label,input,select,textarea,button{
 
 
     --button-primary-color:#8F0101;
-    --button-primary-color:#B81515;
+    --button-secondary-color:#B81515;
 
 
     --text-primary-color:#222222;
-    --text-secudary-color:#FFFFFF;
+    --text-secondary-color:#FFFFFF;
 
     --tittle-wight:700;
     --text-weight:400;
     --menu-text-weight:500;
 }
 
+body{
+    font-family: "Montserrat";
+}
