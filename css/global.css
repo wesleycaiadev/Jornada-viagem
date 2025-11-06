@@ -17,8 +17,8 @@ body,img,h1,p,fieldset,legend,label,input,select,textarea,button{
 
 :root{
     --background-primary-color:#ffffff;
-    --background-securady-color:#F5F5F5;
-    --background-securady-color:#0000;
+    --background-secondary-color:#F5F5F5;
+    --background-terciary-color:#000000;
 
 
     --button-primary-color:#8F0101;
