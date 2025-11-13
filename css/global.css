@@ -60,17 +60,17 @@ body {
   margin: 16px auto 32px;
 }
 
-.button{
-    width: 280px;
-    height: 64px;
-    background-color: var(--button-secondary-color);
-    font-size: 20px ;
-    font-weight: var(--tittle-wight);
-    color: var(--text-secondary-color);
-    border-radius: 16px;
-    text-decoration: none;
-    line-height: 64px;
-    display: inline-block;
+.button {
+  width: 280px;
+  height: 64px;
+  background-color: var(--button-secondary-color);
+  font-size: 20px;
+  font-weight: var(--tittle-wight);
+  color: var(--text-secondary-color);
+  border-radius: 16px;
+  text-decoration: none;
+  line-height: 64px;
+  display: inline-block;
 }
 
 @media screen and (min-width: 768px) {
@@ -80,9 +80,8 @@ body {
   }
 }
 
-
-@media screen and (min-width: 1024px){
-    .button:hover{
-        background-color: var(--button-primary-color);
-    }
+@media screen and (min-width: 1024px) {
+  .button:hover {
+    background-color: var(--button-primary-color);
+  }
 }

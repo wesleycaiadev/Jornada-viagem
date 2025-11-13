@@ -1,3 +1,12 @@
+.offers-card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
 .card {
   color: var(--text-secondary-color);
   padding: 24px 16px;
@@ -7,6 +16,7 @@
   background-color: black;
   border-radius: 16px;
   text-align: center;
+  margin: 24px;
 }
 .card header {
   display: block;
@@ -19,12 +29,12 @@
   font-weight: var(--text-weight);
 }
 .card header h3 {
-  font-size: 48px;
+  font-size: 40px;
   font-weight: var(--tittle-wight);
   margin: 8px 0 0;
 }
 .card header span {
-  font-size: 40px;
+  font-size: 32px;
   margin-top: 24px;
   display: inline-block;
 }
