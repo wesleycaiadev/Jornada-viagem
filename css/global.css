@@ -1,38 +1,87 @@
 @font-face {
-    font-family: "Montserrat";
-    src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
-    font-style: normal;
-    font-display: swap;
-    font-weight: 100 900;
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
 }
-
 
 /*CSS RESET */
 
-body,img,h1,p,fieldset,legend,label,input,select,textarea,button{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body,
+img,
+h1,
+p,
+fieldset,
+legend,
+label,
+input,
+select,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-:root{
-    --background-primary-color:#ffffff;
-    --background-secondary-color:#F5F5F5;
-    --background-terciary-color:#000000;
+:root {
+  --background-primary-color: #ffffff;
+  --background-secondary-color: #f5f5f5;
+  --background-terciary-color: #000000;
 
+  --button-primary-color: #8f0101;
+  --button-secondary-color: #b81515;
 
-    --button-primary-color:#8F0101;
-    --button-secondary-color:#B81515;
+  --text-primary-color: #222222;
+  --text-secondary-color: #ffffff;
 
-
-    --text-primary-color:#222222;
-    --text-secondary-color:#FFFFFF;
-
-    --tittle-wight:700;
-    --text-weight:400;
-    --menu-text-weight:500;
+  --tittle-wight: 700;
+  --text-weight: 400;
+  --menu-text-weight: 500;
 }
 
-body{
-    font-family: "Montserrat";
+body {
+  font-family: "Montserrat";
+}
+
+.title-section h2 {
+  font-size: 28px;
+  font-weight: var(--tittle-wight);
+  margin: 0;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.title-section hr {
+  width: 180px;
+  height: 4px;
+  border: none;
+  background-color: var(--button-secondary-color);
+  margin: 16px auto 32px;
+}
+
+.button {
+  width: 280px;
+  height: 64px;
+  background-color: var(--button-secondary-color);
+  font-size: 20px;
+  font-weight: var(--tittle-wight);
+  color: var(--text-secondary-color);
+  border-radius: 16px;
+  text-decoration: none;
+  line-height: 64px;
+  display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+  .title-section h2 {
+    font-size: 32px;
+    font-weight: var(--tittle-wight);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .button:hover {
+    background-color: var(--button-primary-color);
+  }
 }
