@@ -13,15 +13,16 @@
   width: 312px;
   height: 288px;
   box-sizing: border-box;
-  background-color: black;
   border-radius: 16px;
   text-align: center;
   margin: 24px;
+
 }
 .card header {
   display: block;
   position: static;
   padding: 0;
+  background-color: transparent;
 }
 
 .card header p {
@@ -42,6 +43,26 @@
 .button {
   margin: 24px 0;
 }
+
+
+.card.japao{
+  background-image: url(../assets/card/bg-card-japão.jpg); 
+  background-size: cover; 
+}
+.card.San_andreas{
+  background-image: url(../assets/card/bg-card-san_andreas.jpg); 
+  background-size: cover; 
+}
+.card.Paraiba{
+  background-image: url(../assets/card/bg-card-paraiba.jpg); 
+  background-size: cover; 
+}
+
+.card.Manaus{
+  background-image: url(../assets/card/bg-card-Manaus.jpg); 
+  background-size: cover; 
+}
+
 
 @media screen and (min-width: 1024px) {
   .card {
