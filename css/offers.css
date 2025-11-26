@@ -89,14 +89,14 @@
     justify-content: center;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1300px) {
   .card {
     width: 588px;
     height: 308px;
   }
 }
 
-@media screen and (min-width: 1920px){
+@media screen and (min-width: 1818px){
   .offers-card{
     width: 1250px;
     margin: 0 auto;
