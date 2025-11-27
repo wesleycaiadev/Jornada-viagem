@@ -1,0 +1,139 @@
+.Destinos-populares {
+    margin: 80px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.title-section h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+
+}
+
+
+.item {
+    width: 312px;
+    background-color: var(--background-primary-color); 
+    display: flex;
+    flex-direction: column;
+}
+
+.img-tokyo {
+    width: 100%;
+    height: 360px; 
+    background-image: url(../assets/Destino_destaques/Tokyo_mb.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 16px;
+}
+
+.img-osaka{
+    width: 100%;
+    height: 360px; 
+    background-image: url(../assets/Destino_destaques/Osaka_mb.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 16px;
+}
+
+.item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+
+.item-content h4 {
+    font-size: 24px; 
+    font-weight: var(--tittle-wight);
+    color: var(--text-primary-color);
+    margin: 8px 0 16px 0; 
+}
+
+
+.item-content p {
+    font-size: 16px;
+    line-height: 1.5; 
+    color: var(--text-primary-color);
+    margin-bottom: 24px;
+    align-items: center;
+}
+
+.item-content .button {
+    width: 100%; 
+    margin: 0;
+    text-align: center;
+}
+
+
+@media screen and (min-width:768px){
+    .item {
+    width: 648px;
+}
+
+.title-section h2{
+    flex-direction: row ;
+    justify-content: center;
+    gap: 10px;
+    margin: 80px 0 0 0;
+
+}
+
+.img-tokyo {
+    width: 100%;
+    height: 452px; 
+    background-image: url(../assets/Destino_destaques/Tokyo_tablet.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 24px;
+}
+
+.img-osaka{
+    width: 100%;
+    height: 452px; 
+    background-image: url(../assets/Destino_destaques/Osaka_tablet.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 24px;
+}
+
+.item-content .button {
+    width: 284px; 
+    height: 64px;
+    margin: 0;
+    text-align: center;
+}
+
+}
+
+@media screen and (min-width:1200px){
+.Destinos-populares {
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 10px;
+
+}
+
+.img-tokyo{
+    width: 588px;
+    background-image: url(../assets/Destino_destaques/Tokyo-desktop.jpg);
+}
+.img-osaka{
+    width:588px;
+    background-image: url(../assets/Destino_destaques/Osaka-desktop.jpg);
+}
+
+.item-content p {
+    font-size: 20px;
+    line-height:32px; 
+    color: var(--text-primary-color);
+    margin-bottom: 24px;
+    align-items: center;
+    width: 588px;
+}
+}
