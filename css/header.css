@@ -1,11 +1,11 @@
-header {
-  background-color: var(--background-terciary-color);
+.main-header {
+  background-color: var(--background-tertiary-color);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  position: relative;
   padding: 38px 48px;
+  position: relative;
 }
 
 .logo {
@@ -13,9 +13,11 @@ header {
   width: 68px;
   height: 64px;
 }
+
 .img-mobile {
   display: block;
 }
+
 .img-desktop {
   display: none;
 }
@@ -25,30 +27,32 @@ header {
 
 input[type="checkbox"]:checked ~ nav {
   display: block;
+  position: absolute;
   top: 100%;
   left: 0;
-  position: absolute;
   width: 100%;
-  background-color: var(--background-terciary-color);
+  background-color: var(--background-tertiary-color);
 }
+
 nav {
   display: none;
 }
 
 .list-links {
   list-style: none;
-  font-weight: var(--text-weight);
 }
 
 .list-links li {
   margin: 16px 0;
 }
-
-.list-links a {
+.list-links li a {
   color: var(--text-secondary-color);
   text-decoration: none;
   font-weight: var(--menu-text-weight);
   font-size: 24px;
+}
+.list-links li a.active {
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 768px) {
@@ -63,51 +67,38 @@ nav {
   .navigation-menu nav {
     display: block;
   }
-
+  .navigation-menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
   .navigation-menu li {
     margin: 0;
   }
-  .list-links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0;
 }
-}
-
 
 @media screen and (min-width: 1024px) {
-  header {
+  .main-header {
     padding: 38px 120px;
   }
   .logo {
     width: 260px;
     height: 64px;
   }
-
-  .img-mobile {
-    display: none;
-  }
   .img-desktop {
     display: block;
   }
-  .list-links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0;
-}
-}
-
-.list-links a:hover {
-  color: var(--button-primary-color);
+  .img-mobile {
+    display: none;
+  }
+  .navigation-menu a:hover {
+    color: var(--primary-color);
+  }
 }
 
 @media screen and (min-width: 1920px) {
-  header {
+  .main-header {
     padding: 38px 160px;
-  }
-  .list-links a:hover {
-    color: var(--button-primary-color);
   }
 }

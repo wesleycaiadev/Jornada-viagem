@@ -1,13 +1,27 @@
 @font-face {
   font-family: "Montserrat";
-  src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
   font-style: normal;
   font-display: swap;
-  font-weight: 100 900;
 }
 
-/*CSS RESET */
+:root {
+  --primary-color: #8f0101;
+  --secondary-color: #b81515;
 
+  --background-primary-color: #ffffff;
+  --background-secondary-color: #f5f5f5;
+  --background-tertiary-color: #000000;
+
+  --text-primary-color: #222222;
+  --text-secondary-color: #ffffff;
+
+  --title-weight: 700;
+  --text-weight: 400;
+  --menu-text-weight: 500;
+}
+
+/* CSS RESET */
 body,
 img,
 h1,
@@ -24,64 +38,87 @@ button {
   box-sizing: border-box;
 }
 
-:root {
-  --background-primary-color: #ffffff;
-  --background-secondary-color: #f5f5f5;
-  --background-terciary-color: #000000;
-
-  --button-primary-color: #8f0101;
-  --button-secondary-color: #b81515;
-
-  --text-primary-color: #222222;
-  --text-secondary-color: #ffffff;
-
-  --tittle-wight: 700;
-  --text-weight: 400;
-  --menu-text-weight: 500;
-}
-
 body {
   font-family: "Montserrat";
+  color: var(--text-primary-color);
 }
 
-.title-section h2 {
-  font-size: 28px;
-  font-weight: var(--tittle-wight);
+section {
+  width: 312px;
+  margin: 0 auto 88px;
+}
+
+section.hero,
+section.bottom-hero {
+  width: 100%;
   margin: 0;
-  line-height: 1.5;
+}
+.section-title {
+  width: 280px;
+  margin: 0 auto 32px;
+}
+.section-title h2 {
+  font-size: 28px;
+  font-weight: var(--title-weight);
+  margin: 0;
   text-align: center;
 }
-
-.title-section hr {
+.section-title hr {
   width: 180px;
   height: 4px;
+  background-color: var(--secondary-color);
   border: none;
-  background-color: var(--button-secondary-color);
   margin: 16px auto 32px;
 }
 
-.button {
-  width: 280px;
-  height: 64px;
-  background-color: var(--button-secondary-color);
+.content-title {
+  font-size: 28px;
+  font-weight: var(--title-weight);
+  margin: 0 0 24px;
+}
+.content-text {
   font-size: 20px;
-  font-weight: var(--tittle-wight);
+  font-weight: var(--text-weight);
+  line-height: 32px;
+}
+
+.button {
+  min-width: 280px;
+  height: 64px;
   color: var(--text-secondary-color);
+  font-weight: var(--title-weight);
+  font-size: 20px;
+  background-color: var(--secondary-color);
   border-radius: 16px;
+  display: inline-block;
   text-decoration: none;
   line-height: 64px;
-  display: inline-block;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
-  .title-section h2 {
+  section {
+    width: 648px;
+  }
+  .section-title {
+    width: 100%;
+  }
+  .section-title h2 {
     font-size: 32px;
-    font-weight: var(--tittle-wight);
   }
 }
 
 @media screen and (min-width: 1024px) {
+  section {
+    width: 900px;
+  }
   .button:hover {
-    background-color: var(--button-primary-color);
+    background-color: var(--primary-color);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  section {
+    width: 1200px;
   }
 }
